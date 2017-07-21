@@ -181,6 +181,12 @@ ENABLE_AUTO([nfc-hoa],[Near-Field-Compensated Higher-Order-Ambisonics renderer],
     [SSR_executables="$SSR_executables ssr-nfc-hoa"])
 ])
 
+ENABLE_AUTO([opsi],[Optimised Phantom Source Imaging],
+[
+  AS_IF([test x$enable_opsi = xyes -o x$have_all = xyes],
+    [SSR_executables="$SSR_executables ssr-opsi"])
+])
+
 dnl Note: For what happens with SSR_executables see src/Makefile.am
 AC_SUBST(SSR_executables)
 

@@ -84,6 +84,12 @@ ssr_nfc_hoa_SOURCES = ssr_nfc_hoa.cpp nfchoarenderer.h \
 
 nodist_ssr_nfc_hoa_SOURCES = $(SSRMOCFILES)
 
+ssr_opsi_SOURCES = ssr_opsi.cpp opsirenderer.h \
+	$(LOUDSPEAKERSOURCES) \
+	$(SSRSOURCES)
+
+nodist_ssr_opsi_SOURCES = $(SSRMOCFILES)
+
 LOUDSPEAKERSOURCES = \
 	loudspeakerrenderer.h \
 	loudspeaker.h
